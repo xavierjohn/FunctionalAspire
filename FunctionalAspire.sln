@@ -1,0 +1,56 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35506.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionalAspire.AppHost", "FunctionalAspire.AppHost\FunctionalAspire.AppHost.csproj", "{1A525021-D734-4FE8-A039-EE0E25A76E1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionalAspire.ServiceDefaults", "FunctionalAspire.ServiceDefaults\FunctionalAspire.ServiceDefaults.csproj", "{1FB04B67-5653-4309-86D8-2DCB830731F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionalAspire.ApiService", "FunctionalAspire.ApiService\FunctionalAspire.ApiService.csproj", "{C723EAAA-2A75-44CE-AAC5-6B058B8985B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionalAspire.Web", "FunctionalAspire.Web\FunctionalAspire.Web.csproj", "{254D3241-E12E-41B0-9D72-6C3174DC2FBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionalAspire.Tests", "FunctionalAspire.Tests\FunctionalAspire.Tests.csproj", "{C0374AC7-111F-470A-B51B-4461EDF63B64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionalAspire.Domain", "FunctionalAspire.Domain\FunctionalAspire.Domain.csproj", "{471BA066-EFF6-488B-9284-426D27D57449}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{86D06457-40B4-4F69-B354-6A623245F016}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A525021-D734-4FE8-A039-EE0E25A76E1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A525021-D734-4FE8-A039-EE0E25A76E1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A525021-D734-4FE8-A039-EE0E25A76E1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A525021-D734-4FE8-A039-EE0E25A76E1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FB04B67-5653-4309-86D8-2DCB830731F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FB04B67-5653-4309-86D8-2DCB830731F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FB04B67-5653-4309-86D8-2DCB830731F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FB04B67-5653-4309-86D8-2DCB830731F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C723EAAA-2A75-44CE-AAC5-6B058B8985B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C723EAAA-2A75-44CE-AAC5-6B058B8985B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C723EAAA-2A75-44CE-AAC5-6B058B8985B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C723EAAA-2A75-44CE-AAC5-6B058B8985B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{254D3241-E12E-41B0-9D72-6C3174DC2FBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{254D3241-E12E-41B0-9D72-6C3174DC2FBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{254D3241-E12E-41B0-9D72-6C3174DC2FBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{254D3241-E12E-41B0-9D72-6C3174DC2FBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0374AC7-111F-470A-B51B-4461EDF63B64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0374AC7-111F-470A-B51B-4461EDF63B64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0374AC7-111F-470A-B51B-4461EDF63B64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0374AC7-111F-470A-B51B-4461EDF63B64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{471BA066-EFF6-488B-9284-426D27D57449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{471BA066-EFF6-488B-9284-426D27D57449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{471BA066-EFF6-488B-9284-426D27D57449}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{471BA066-EFF6-488B-9284-426D27D57449}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,79 @@
+@HostAddress = https://localhost:7588
+
+//Weather 
+GET {{HostAddress}}/weatherforecast
+Accept: application/json
+
+###
+
+
+// User
+
+// Okay
+POST {{HostAddress}}/users/register
+Content-Type: application/json
+Accept: application/json
+
+{
+  "firstName": "Xavier",
+  "lastName": "John",
+  "email": "xa@somewhere.com",
+  "password": "KeepItSimple"
+}
+###
+
+// Created
+POST {{HostAddress}}/users/registerCreated
+Content-Type: application/json
+Accept: application/json
+
+{
+  "firstName": "Xavier",
+  "lastName": "John",
+  "email": "xa@somewhere.com",
+  "password": "KeepItSimple"
+}
+###
+
+// Bad request
+POST {{HostAddress}}/users/register
+Content-Type: application/json
+Accept: application/json
+
+{
+  "firstName": "string",
+  "lastName": "",
+  "email": "xa.com",
+  "password": "string"
+}
+###
+
+// Not found
+GET {{HostAddress}}/users/notfound/213
+Accept: application/json
+
+###
+
+// Conflict
+GET {{HostAddress}}/users/conflict/213
+Accept: application/json
+
+###
+
+// Forbidden
+GET {{HostAddress}}/users/forbidden/213
+Accept: application/json
+
+###
+
+// Unauthorized
+GET {{HostAddress}}/users/unauthorized/213
+Accept: application/json
+
+###
+
+// Unexpected
+GET {{HostAddress}}/users/unexpected/213
+Accept: application/json
+
+###
