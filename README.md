@@ -18,5 +18,42 @@ Functional .NET Aspire where Functional DDD and Service Level Indicators have be
         .AddServiceLevelIndicator();
 ```
 
-
+## Metric
 ![](FunctionalAspire.jpg)
+
+## Trace Okay
+
+```
+// Okay
+POST {{HostAddress}}/users/register
+Content-Type: application/json
+Accept: application/json
+
+{
+  "firstName": "Xavier",
+  "lastName": "John",
+  "email": "xa@somewhere.com",
+  "password": "KeepItSimple"
+}
+###
+```
+
+![](FunctionalAspireTraceOk.jpg)
+
+## Trace Error
+```
+// Bad request
+POST {{HostAddress}}/users/register
+Content-Type: application/json
+Accept: application/json
+
+{
+  "firstName": "string",
+  "lastName": "",
+  "email": "xa.com",
+  "password": "string"
+}
+###
+```
+
+![](FunctionalAspireTraceError.jpg)

@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Azure.Core" Version="1.44.1" />
-    <PackageReference Include="FunctionalDdd.Asp" Version="2.0.0-alpha.52" />
+    <PackageReference Include="FunctionalDdd.Asp" Version="2.0.0-alpha.55" />
     <PackageReference Include="ServiceLevelIndicators.Asp" Version="8.0.0-alpha.25" />
   </ItemGroup>
 
