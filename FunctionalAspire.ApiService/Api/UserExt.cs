@@ -21,7 +21,7 @@
           .Combine(LastName.TryCreate(request.lastName))
           .Combine(EmailAddress.TryCreate(request.email))
           .Bind((firstName, lastName, email) => User.TryCreate(firstName, lastName, email, request.password))
-          .ToOkResult());
+          .ToHttpResult());
 
       userApi.MapPost("/registerCreated", (RegisterUserRequest request) =>
           FirstName.TryCreate(request.firstName)
@@ -30,27 +30,27 @@
           .Bind((firstName, lastName, email) => User.TryCreate(firstName, lastName, email, request.password))
           .Finally(
                   ok => Results.CreatedAtRoute("GetUserById", new RouteValueDictionary { { "name", ok.FirstName } }, ok),
-                  err => err.ToErrorResult()));
+                  err => err.ToHttpResult()));
 
       userApi.MapGet("/notfound/{id}", (int id) =>
           Result.Failure(Error.NotFound("User not found", id.ToString()))
-          .ToOkResult());
+          .ToHttpResult());
 
       userApi.MapGet("/conflict/{id}", (int id) =>
           Result.Failure(Error.Conflict("Record has changed.", id.ToString()))
-          .ToOkResult());
+          .ToHttpResult());
 
       userApi.MapGet("/forbidden/{id}", (int id) =>
           Result.Failure(Error.Forbidden("You do not have access.", id.ToString()))
-          .ToOkResult());
+          .ToHttpResult());
 
       userApi.MapGet("/unauthorized/{id}", (int id) =>
           Result.Failure(Error.Unauthorized("You have not been authorized.", id.ToString()))
-          .ToOkResult());
+          .ToHttpResult());
 
       userApi.MapGet("/unexpected/{id}", (int id) =>
           Result.Failure(Error.Unexpected("Internal server error.", id.ToString()))
-          .ToOkResult());
+          .ToHttpResult());
 
     }
 
